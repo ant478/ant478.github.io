@@ -1,0 +1,492 @@
+/* general */
+  html, body {
+    font-family: Arial;
+    font-size: 0;
+    height: 100%;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 640px;
+    min-height: 480px;
+    overflow: hidden;
+  }
+
+  img {
+    border: none; }
+
+  h1, h2, h3, h4 {
+    display: block;
+    margin: 0;
+    font-weight: normal; }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+
+  #page-container {
+    height: 100%;
+    position: relative;
+  }
+
+  .page {
+    height: 100%;
+    position: relative;
+    min-height: 480px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 50px;
+    bottom: 0;
+  }
+
+  /* fonts */ 
+    @font-face {
+        font-family: 'American Retro';
+        src: url('assets/American Retro/american-retro-webfont.eot');
+        src: url('assets/American Retro/american-retro-webfont.eot?#iefix') format('embedded-opentype'),
+             url('assets/American Retro/american-retro-webfont.woff2') format('woff2'),
+             url('assets/American Retro/american-retro-webfont.woff') format('woff'),
+             url('assets/American Retro/american-retro-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Yaquotescript';
+        src: url('assets/Yaquotescript/yaquotescript_personaluse-webfont.eot');
+        src: url('assets/Yaquotescript/yaquotescript_personaluse-webfont.eot?#iefix') format('embedded-opentype'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.woff2') format('woff2'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.woff') format('woff'),
+             url('assets/Yaquotescript/yaquotescript_personaluse-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+/* header */
+
+  #page-header {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.85);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #page-header .top-menu {
+      display: inline-block;
+      float: right;
+      height: 100%;
+      margin-right: 30px;
+  }
+
+  #page-header .top-menu .top-menu-element {
+      display: inline-block;
+      margin-right: 15px;
+  }
+
+  #page-header .top-menu .top-menu-element .top-menu-link {
+      color: #FFFFFF;
+      cursor: pointer;
+      font-size: 14px;
+      height: 100%;
+      line-height: 50px;
+      transition: all 0.3s ease 0s;
+  }
+
+  #page-header .top-menu .top-menu-element .top-menu-link:hover {
+  	color: #AA7968;
+  }
+
+  #page-header .top-menu .top-menu-element.active .top-menu-link {
+  	color: #AA7968;
+  	cursor: default;
+  }
+
+/* page content */
+
+  #page-content {
+    height: 100%;
+    position: relative;
+  }
+
+  /* logo block */
+
+    .logo-block {
+      background: url("assets/back1.jpg") no-repeat scroll center 0 / cover  rgba(0, 0, 0, 0);
+      text-align: center;
+    }
+
+    .logo-block .logo-content {
+      bottom: 50px;
+      height: 300px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+    }
+
+    .logo-block h2 {
+      text-shadow: 2px 2px 2px #000000;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    .logo-block .title-text-1 {    
+      font-family: 'American Retro';
+      font-size: 100px;       
+    }
+
+    .logo-block .title-text-2 {    
+      font-family: 'Yaquotescript';
+      font-size: 156px;    
+      margin-left: 28px;
+    }
+
+    .logo-block .slogan-text {
+      color: #FFFFFF;
+      display: block;
+      font-size: 22px;
+      margin-top: 10px;
+      text-shadow: 4px 4px 4px #000000;
+    }
+
+    .logo-block .order-button {
+      background-color: #B38151;
+      border-radius: 8px;
+      color: #45322E;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 25px;
+      font-weight: bold;
+      height: 50px;
+      line-height: 50px;
+      margin-top: 35px;
+      padding: 0 20px;
+      text-shadow: 1px 1px 1px #CD9435;
+      box-shadow: 1px 2px 10px #040404;
+      transition: all 1s ease 0s;
+    }
+
+    .logo-block .order-button:hover {
+      background-color: #895727;
+      color: #311E1A;
+      text-shadow: 1px 1px 1px #C99042;
+    }
+
+  /* swiper */
+
+    .swiper {
+      background: #1C1C1C url("assets/back3.jpg");
+      text-align: center;
+    }
+
+    .swiper .swiper-header {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 26px;
+      height: 26px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+    }
+
+    .swiper .swiper-container {
+      height: calc(100% - 38px);
+      position: relative;
+    }
+
+    .swiper .slide-content {
+      bottom: 0;
+      display: inline-block;
+      height: 420px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 600px;
+    }
+
+    .swiper .slide-image {
+      height: 285px;
+      width: auto;
+      max-width: 600px;
+    }
+
+    .swiper .slide-description {
+      color: #E2E2E2;
+      font-size: 16px;
+      width: 600px;
+    }
+
+    .swiper .slide-description b.kapuchino { color: rgb(125, 53, 14); }
+    .swiper .slide-description b.latte { color: rgb(185, 70, 22); }
+    .swiper .slide-description b.espresso { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.americano { color: rgb(0, 0, 3); }
+    .swiper .slide-description b.kruasan { color: rgb(219, 154, 0); }
+    .swiper .slide-description b.chocolate { color: rgb(69, 50, 46); }
+    .swiper .slide-description b.ice-cream { color: rgb(255, 255, 255); }
+    .swiper .slide-description b.chocolate-cake { color: rgb(69, 50, 46); }
+
+  /* middle text */
+
+    .middle-text {
+      background: url("assets/back2.jpg") no-repeat scroll center 0 / cover rgba(0, 0, 0, 0)
+    }
+
+    .middle-text p {
+      color: #F5F5F5;
+      font-size: 17px;
+      letter-spacing: 0.6px;
+      line-height: 27px;
+      margin: 0 10%;
+      position: relative;
+      text-align: justify;
+      text-shadow: 2px 2px 2px #111111;
+      top: 50%;
+      width: 80%;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+  /* contacts */
+
+    .contacts {
+      background: #1C1C1C url("assets/back3.jpg");
+      text-align: center; 
+    }
+  
+    .contacts .contact-form-header {
+      color: #FFFFFF;
+      display: inline-block;
+      font-size: 26px;
+      height: 26px;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+
+    .contacts .order-form {
+      bottom: 25px;
+      display: block;
+      height: 234px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .contacts .name-field,
+    .contacts .phone-field,
+    .contacts .adress-field {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0);
+      border: 1px solid #DDDDDD;
+      border-radius: 5px;
+      color: #FFFFFF;
+      display: block;
+      margin: auto;
+      margin-bottom: 22px;
+      outline: medium none;
+      padding: 6px 10px;
+      width: 330px;
+      font-size: 16px;
+      font-family: Arial;
+    }
+
+    .contacts .name-field {
+      height: 33px;
+    }
+
+    .contacts .phone-field {
+      height: 33px;
+    }
+
+    .contacts .adress-field {
+      height: 70px;
+      resize: none;
+    }
+
+    .contacts .submit-button {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      background-color: #9E6C3C;
+      border: medium none;
+      border-radius: 8px;
+      color: #3E2B27;
+      cursor: pointer;
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      height: 30px;
+      line-height: 30px;
+      margin: 0 auto;
+      outline: medium none;
+      padding: 0 20px;
+      text-shadow: 1px 1px 1px #CD9435;
+      box-shadow: 1px 2px 10px #040404;
+      transition: all 1s ease 0s;
+    }
+
+    .contacts .submit-button:hover {
+      background-color: #895727;
+      color: #311E1A;
+      text-shadow: 1px 1px 1px #C99042;
+    }
+
+  /* footer */
+
+    #page-footer {
+      background: url("assets/back4.jpg") repeat scroll 0 0 #401414;
+      bottom: 0;
+      height: 120px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    }
+
+    #page-footer .footer-text-1 {
+      color: #FFFFFF;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    #page-footer .footer-buttons {
+      display: inline-block;
+      margin-top: 15px;
+    }
+
+    #page-footer .footer-buttons .app-store-button,
+    #page-footer .footer-buttons .google-play-button {    
+      cursor: pointer;
+      display: inline-block;
+      height: 42px;
+      margin: 0 7px;
+      width: 132px;
+    }
+
+    #page-footer .footer-buttons .app-store-button {
+      background: url("assets/appstore-button.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    }
+
+    #page-footer .footer-buttons .google-play-button {
+      background: url("assets/get-it-on-google-play.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    }
+
+    #page-footer .terms-link {
+      color: #999999;
+      display: block;
+      font-size: 12px;
+      margin-top: 5px;
+      text-decoration: none;
+    }
+
+    #page-footer .terms-link:hover {
+      text-decoration: underline;
+    }
+
+  /* responsive */
+
+    @media (max-width: 640px) {
+      /* general */
+
+        html, body {
+          min-width: 320px;
+          overflow: visible;
+        }
+
+      .page {
+        min-width: 320px;
+      }
+
+      /* logo block */
+        .logo-block .logo-content {
+          height: 250px;
+          bottom: 0;
+        }
+
+        .logo-block .title-text-1 {
+          font-size: 55px;
+        }
+
+        .logo-block .title-text-2 {
+          font-size: 75px;
+          margin-left: 18px;
+        }
+
+        .logo-block .slogan-text {
+          font-size: 16px;
+          padding: 0 9%;
+        }
+
+        .logo-block .order-button {
+          font-size: 18px;
+          height: 30px;
+          line-height: 30px;
+          padding: 0 10px;
+        }
+
+      /* swiper */
+        .swiper .swiper-header {
+          font-size: 22px;
+          height: 22px;
+        }
+
+        .swiper .slide-content {
+          width: 80%;
+          height: 360px;
+        }
+
+        .swiper .slide-image {
+          height: 200px;
+        }
+
+        .swiper .slide-description {
+          font-size: 14px;
+          padding: 0 5%;
+          width: 90%;
+        }
+
+        .swiper .slide-description b {
+          color: #fff !important;
+        }
+
+      /* middle text */ 
+        .middle-text p {
+          font-size: 14px;
+          letter-spacing: 0.3px;
+          line-height: 20px;
+        }
+
+      /* contacts */
+        .contacts .contact-form-header {
+          font-size: 22px;
+          height: 22px;
+        }
+
+        .contacts .name-field,
+        .contacts .phone-field,
+        .contacts .adress-field {
+          width: 80%;
+          font-size: 14px;
+        }
+
+        .contacts .submit-button {
+          font-size: 18px;
+          height: 25px;
+          line-height: 23px;
+        }
+
+      /* footer */ 
+        #page-footer .footer-text-1 {
+          font-size: 14px;
+        }
+
+    }
